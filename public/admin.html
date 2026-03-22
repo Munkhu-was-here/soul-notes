@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Panel - Soul Notes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+
+  <header class="navbar">
+    <a href="index.html" class="logo-wrap">
+      <div class="logo-icon">🎧</div>
+      <div class="logo-text">
+        <div class="logo-top">PODCAST</div>
+        <div class="logo-title">Soul Notes</div>
+      </div>
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html">Нүүр</a>
+      <a href="podcast.html">Подкаст</a>
+      <a href="contact.html" class="active">Захидал</a>
+      <a href="#" id="contactAdminBtn">Админ</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn" type="button">☰</button>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Нүүр</a>
+    <a href="podcast.html">Подкаст</a>
+    <a href="contact.html">Захидал</a>
+    <a href="admin.html">Админ</a>
+  </div>
+
+  <main class="admin-page">
+    <section class="admin-topbar">
+      <div class="section-head">
+        <span class="badge">Admin Panel</span>
+        <h1>Контент удирдах</h1>
+        <p>Шинэ дугаар нээмх. Устгах</p>
+      </div>
+
+      <button id="logoutBtn" class="btn btn-secondary" type="button">Гарах</button>
+    </section>
+
+    <section class="admin-grid">
+      <div class="admin-card">
+        <h2>Шинэ подкаст нэмэх</h2>
+
+        <form id="uploadForm" class="login-form" enctype="multipart/form-data">
+          <input type="text" id="title" name="title" placeholder="Podcast title" required />
+          <textarea id="description" name="description" rows="6" placeholder="Podcast description" required></textarea>
+
+          <label class="upload-label">
+            <span>Видео файл сонгох</span>
+            <input type="file" id="video" name="video" accept="video/*" required />
+          </label>
+
+          <label class="upload-label">
+            <span>Аудио файл сонгох</span>
+            <input type="file" id="audio" name="audio" accept="audio/*" required />
+          </label>
+
+          <label class="upload-label">
+            <span>Хавсралт зураг сонгох</span>
+            <input type="file" id="cover" name="cover" accept="image/*" />
+          </label>
+
+          <button type="submit" class="btn btn-primary full">Upload Podcast</button>
+          <p id="uploadStatus" class="login-status"></p>
+        </form>
+      </div>
+
+      <div class="admin-card">
+        <div class="admin-list-head">
+          <h2>Орсон подкаст</h2>
+          <span id="adminCount">0 дугаар</span>
+        </div>
+
+        <div id="adminPodcastList" class="admin-podcast-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>

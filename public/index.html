@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soul Notes Podcast</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+
+  <header class="navbar">
+    <a href="index.html" class="logo-wrap">
+      <div class="logo-icon">🎧</div>
+      <div class="logo-text">
+        <div class="logo-top">PODCAST</div>
+        <div class="logo-title">Soul Notes</div>
+      </div>
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html" class="active">Нүүр</a>
+      <a href="podcast.html">Подкаст</a>
+      <a href="contact.html">Захидал</a>
+      <a href="#" id="openLoginBtn" class="admin-link">Админ</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn" type="button">☰</button>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Нүүр</a>
+    <a href="podcast.html">Подкаст</a>
+    <a href="contact.html">Захидал</a>
+    <a href="#" id="openLoginBtnMobile">Админ</a>
+  </div>
+
+  <main class="home-shell">
+    <section class="hero hero-upgraded">
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <span class="badge">Soul Notes Podcast</span>
+        <h1>Гоё гарчиг энд бичнэ</h1>
+        <p>
+          Бичих юм алга надаа.
+        </p>
+
+        <div class="hero-actions">
+          <a href="podcast.html" class="btn btn-primary">Подкаст үзэх</a>
+          <a href="contact.html" class="btn btn-secondary">Захидал илгээх</a>
+        </div>
+
+        <div class="hero-metrics">
+          <div class="metric-card">
+            <strong>Видео + Аудио</strong>
+            <span>Үз эсвэл сонс</span>
+          </div>
+          <div class="metric-card">
+            <strong>Орчин үеийн</strong>
+            <span>Хмагийн шилдгийг</span>
+          </div>
+          <div class="metric-card">
+            <strong>Нууцлал</strong>
+            <span>Хамгаалалттай контент</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="brand-strip">
+      <div class="brand-pill">Татах боломж</div>
+      <div class="brand-pill">Өөрийн дуу хоолойгоор бичих</div>
+    </section>
+
+    <section class="home-section">
+      <div class="section-head">
+        <span class="badge">Яагаад "Soul Notes" гэж?</span>
+        <h2>Учир нь бид cool.</h2>
+        <p>
+          Энд бичих юм нэмье. Надад бичих санаа алга.
+        </p>
+      </div>
+
+      <div class="feature-grid upgraded-grid">
+        <article class="feature-card glass-card">
+          <div class="feature-icon">🎬</div>
+          <h3>Бичих юм 1</h3>
+          <p>
+            Энд гоё тайлбар
+          </p>
+        </article>
+
+        <article class="feature-card glass-card">
+          <div class="feature-icon">⬇</div>
+          <h3>Бичих юм 2</h3>
+          <p>
+            Энд гоё тайлбар
+          </p>
+        </article>
+
+        <article class="feature-card glass-card">
+          <div class="feature-icon">🎤</div>
+          <h3>Бичих юм 3</h3>
+          <p>
+            Энд гоё тайлбар
+          </p>
+        </article>
+
+        <article class="feature-card glass-card">
+          <div class="feature-icon">🔐</div>
+          <h3>Бичих юм 4</h3>
+          <p>
+            Энд гоё тайлбар
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="home-section highlight-section">
+      <div class="section-head">
+        <span class="badge">Highlight</span>
+        <h2>Хамгийн сонирхолтой хэсэг</h2>
+        <p>
+          Дугааруудын гал гарсан хэсэг.
+        </p>
+      </div>
+
+      <div class="highlight-card" id="highlightCard">
+        <div class="highlight-media">
+          <video id="highlightVideo" controls muted></video>
+        </div>
+
+        <div class="highlight-content">
+          <h3 id="highlightTitle">Нэг түүх</h3>
+          <p id="highlightDesc"></p>
+
+          <div class="highlight-actions">
+            <a href="podcast.html" class="btn btn-primary">Дугаар үзэх</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="home-section cta-section">
+      <div class="cta-card glass-card">
+        <span class="badge">Сонсож эхлэх</span>
+        <h2>Хүний дотоод сэтгэл, дуу хоолойгоор аялцгаая</h2>
+        <p>
+          Мэдкүээээ ахаххаха бичих юм нээрэнгээсээ алга. Санаа төрөхгүй байна.
+        </p>
+        <div class="hero-actions">
+          <a href="podcast.html" class="btn btn-primary">Подкастын номын сангаар зочлох</a>
+          <a href="contact.html" class="btn btn-secondary">Захидал илгээх</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="login-modal hidden" id="loginModal">
+    <div class="login-backdrop" id="loginBackdrop"></div>
+    <div class="login-box">
+      <button class="close-login" id="closeLoginBtn" type="button">×</button>
+      <h2>Админ нэвтрэх</h2>
+      <p>Зөвхөн Soul Notes Podcast Club-ын гишүүд нэвтрэх боломжтой.</p>
+
+      <form id="loginForm" class="login-form">
+        <input type="text" id="loginUsername" placeholder="Username" required />
+        <input type="password" id="loginPassword" placeholder="Password" required />
+        <button type="submit" class="btn btn-primary full">Нэвтрэх</button>
+        <p id="loginStatus" class="login-status"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

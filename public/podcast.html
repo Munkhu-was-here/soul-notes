@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Podcast - Soul Notes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+
+  <header class="navbar">
+    <a href="index.html" class="logo-wrap">
+      <div class="logo-icon">🎧</div>
+      <div>
+        <div class="logo-top">PODCAST</div>
+        <div class="logo-title">Soul Notes</div>
+      </div>
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html">Нүүр</a>
+      <a href="podcast.html" class="active">Подкаст</a>
+      <a href="contact.html">Захидал</a>
+      <a href="admin.html">Админ</a>
+    </nav>
+
+    <button class="menu-btn" id="menuBtn" type="button">☰</button>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Нүүр</a>
+    <a href="podcast.html">Подкаст</a>
+    <a href="contact.html">Захидал</a>
+    <a href="admin.html">Админ</a>
+  </div>
+
+  <main class="podcast-page">
+    <section class="podcast-top">
+      <div class="section-head">
+        <span class="badge">Подкастын номын сан.</span>
+        <h1>Үзэх болон сонсох боломжтой.</h1>
+        <p>
+          Хайгаад үз.
+        </p>
+      </div>
+    </section>
+
+    <section class="podcast-controls">
+      <div class="podcast-search-wrap">
+        <input
+          type="text"
+          id="podcastSearch"
+          placeholder="Search by title or description..."
+        />
+      </div>
+
+      <div class="podcast-sort-wrap">
+        <select id="podcastSort">
+          <option value="newest">Шинээр орсон</option>
+          <option value="oldest">Хуучнаас</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="podcast-layout">
+      <div class="player-section">
+        <div class="player-box">
+          <video id="mainPlayer" controls playsinline></video>
+        </div>
+
+        <div class="player-meta">
+          <span class="player-date" id="playerDate"></span>
+          <h2 id="playerTitle">Уншиж байна...</h2>
+          <p id="playerDesc"></p>
+
+          <div class="download-wrap">
+            <button id="downloadBtn" class="btn btn-primary" type="button">
+              Татах ▼
+            </button>
+
+            <div id="downloadOptions" class="download-options hidden">
+              <a id="downloadVideo" href="#" download>Бичлэгээр татах</a>
+              <a id="downloadAudio" href="#" download>Аудиогоор татах</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="list-section">
+        <div class="list-header">
+          <h3>Бүх дугаар</h3>
+          <span id="episodeCount">0 дугаар</span>
+        </div>
+
+        <div id="podcastList" class="podcast-list"></div>
+      </aside>
+    </section>
+  </main>
+
+  <script src="podcast.js"></script>
+</body>
+</html>
