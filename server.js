@@ -280,10 +280,6 @@ app.listen(PORT, () => {
 });
 console.log("Server file reached the end");
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
-
 app.delete("/api/podcasts/:id", requireAdmin, (req, res) => {
   try {
     const id = Number(req.params.id);
